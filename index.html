@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hall Park Water</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- <script src="app.js"></script> -->
+
+    <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 33.10324394465482, lng: -96.82622539804454 },
+          zoom: 16.8,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA694nlIrekLGa_HFbfbO8zSKZ7EeI6Reo&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
