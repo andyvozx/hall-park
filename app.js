@@ -89,6 +89,70 @@ let markers = [
     coords: { lat: 33.1011, lng: -96.8272 },
     content: "<h1>C1 Garage</h1>",
   },
+  {
+    coords: { lat: 33.1019, lng: -96.8271 },
+    content: "<h1>C1</h1>",
+  },
+  {
+    coords: { lat: 33.1027, lng: -96.8272 },
+    content: "<h1>C2 (1 of 2)</h1>",
+  },
+  {
+    coords: { lat: 33.1031, lng: -96.8293 },
+    content: "<h1>C2 (2 of 2) & G3 jumper (1 of 2)</h1>",
+  },
+  {
+    coords: { lat: 33.1031, lng: -96.8296 },
+    content: "<h1>C2 to G3 jumper (2 of 2)</h1></h1><h2>G3 (3 of 3)</h2>",
+  },
+  {
+    coords: { lat: 33.104, lng: -96.8266 },
+    content: "<h1>C3</h1>",
+  },
+  {
+    coords: { lat: 33.1037, lng: -96.8265 },
+    content: "<h1>C3 to Median 3</h1>",
+  },
+  {
+    coords: { lat: 33.1037, lng: -96.8262 },
+    content: "<h1>C3 to E1 jumper</h1>",
+  },
+  {
+    coords: { lat: 33.1042, lng: -96.8264 },
+    content: "<h1>Median 3 to 4</h1>",
+  },
+  {
+    coords: { lat: 33.1064, lng: -96.8266 },
+    content: "<h1>D1 and D2</h1>",
+  },
+  {
+    coords: { lat: 33.1065, lng: -96.8279 },
+    content: "<h1>D2</h1>",
+  },
+  {
+    coords: { lat: 33.1054, lng: -96.8293 },
+    content: "<h1>D2 to G5 jumper (1 of 2)</h1>",
+  },
+  {
+    coords: { lat: 33.1054, lng: -96.8295 },
+    content: "<h1>D2 to G5 jumper (2 of 2)",
+  },
+  {
+    coords: { lat: 33.105, lng: -96.8309 },
+    content: "<h1>G5</h1>",
+  },
+  {
+    coords: { lat: 33.1031, lng: -96.831 },
+    content: "<h1>G4</h1><h2>G3 (2 of 3)</h2>",
+  },
+  {
+    coords: { lat: 33.1016, lng: -96.831 },
+    content: "<h1>G2</h1><h2>G3 (1 of 3)</h2>",
+  },
+  {
+    coords: { lat: 33.1003, lng: -96.8289 },
+    content: "<h1>G1</h1>",
+  },
 ];
 
 // Loop through markers
