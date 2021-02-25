@@ -1,9 +1,19 @@
 let map;
+const HALL_BOUNDS = {
+  north: 33.1067,
+  south: 33.0985,
+  west: -96.831,
+  east: -96.8229,
+};
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 33.10324394465482, lng: -96.82622539804454 },
     zoom: 16.8,
+    restriction: {
+      latLngBounds: HALL_BOUNDS,
+      strictBounds: false,
+    },
   });
 }
 
@@ -40,11 +50,15 @@ let markers = [
     content: "<h1>B2</h1>",
   },
   {
+    coords: { lat: 33.1015, lng: -96.8268 },
+    content: "<h1>B2 to C pumps jumper</h1>",
+  },
+  {
     coords: { lat: 33.1008, lng: -96.8244 },
     content: "<h1>B1</h1>",
   },
   {
-    coords: { lat: 33.1014, lng: -96.8246 },
+    coords: { lat: 33.1015, lng: -96.8246 },
     content: "<h1>B1 to C pumps jumper</h1>",
   },
   {
@@ -66,6 +80,14 @@ let markers = [
   {
     coords: { lat: 33.1057, lng: -96.8249 },
     content: "<h1>T2 (2 of 2)</h1>",
+  },
+  {
+    coords: { lat: 33.1043, lng: -96.8262 },
+    content: "<h1>E1</h1>",
+  },
+  {
+    coords: { lat: 33.1011, lng: -96.8272 },
+    content: "<h1>C1 Garage</h1>",
   },
 ];
 
