@@ -23,13 +23,12 @@ initMap();
 let markers = [
   {
     coords: { lat: 33.1005, lng: -96.8234 },
-    iconImage:
-      "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
     content: "<h1>A1</h1>",
   },
   {
     coords: { lat: 33.1004, lng: -96.8244 },
     content: "<h1>A1 to A2 jumper</h1>",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.1004, lng: -96.8247 },
@@ -38,12 +37,12 @@ let markers = [
   {
     coords: { lat: 33.0996, lng: -96.8256 },
     content: "<h1>A2 to B2 jumper (1 of 2)</h1>",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.1001, lng: -96.8258 },
     content: "<h1>A2 to B2 jumper (2 of 2)</h1>",
-    iconImage:
-      "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.1001, lng: -96.8258 },
@@ -52,6 +51,7 @@ let markers = [
   {
     coords: { lat: 33.1015, lng: -96.8268 },
     content: "<h1>B2 to C pumps jumper</h1>",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.1008, lng: -96.8244 },
@@ -60,6 +60,7 @@ let markers = [
   {
     coords: { lat: 33.1015, lng: -96.8246 },
     content: "<h1>B1 to C pumps jumper</h1>",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.1018, lng: -96.8237 },
@@ -99,11 +100,15 @@ let markers = [
   },
   {
     coords: { lat: 33.1031, lng: -96.8293 },
-    content: "<h1>C2 (2 of 2) & G3 jumper (1 of 2)</h1>",
+    content:
+      "<h1>C2 (2 of 2) & C2 to G3 jumper (1 of 2)</h1> <h2>Normally Open</h2>",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.1031, lng: -96.8296 },
-    content: "<h1>C2 to G3 jumper (2 of 2)</h1></h1><h2>G3 (3 of 3)</h2>",
+    content:
+      "<h1>C2 to G3 jumper (2 of 2)</h1> <h2>G3 (3 of 3)</h2> <h2>Normally Open</h2>",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.104, lng: -96.8266 },
@@ -131,11 +136,13 @@ let markers = [
   },
   {
     coords: { lat: 33.1054, lng: -96.8293 },
-    content: "<h1>D2 to G5 jumper (1 of 2)</h1>",
+    content: "<h1>D2 to G5 jumper (1 of 2)</h1> <h2>Normally Open</h2>",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.1054, lng: -96.8295 },
-    content: "<h1>D2 to G5 jumper (2 of 2)",
+    content: "<h1>D2 to G5 jumper (2 of 2)</h1> <h2>Normally Open</h2>",
+    iconImage: "resources/pics/greenx.png",
   },
   {
     coords: { lat: 33.105, lng: -96.8309 },
@@ -143,15 +150,26 @@ let markers = [
   },
   {
     coords: { lat: 33.1031, lng: -96.831 },
-    content: "<h1>G4</h1><h2>G3 (2 of 3)</h2>",
+    content: "<h1>G4</h1> <h2>G3 (2 of 3)</h2>",
   },
   {
     coords: { lat: 33.1016, lng: -96.831 },
-    content: "<h1>G2</h1><h2>G3 (1 of 3)</h2>",
+    content: "<h1>G2</h1> <h2>G3 (1 of 3)</h2>",
   },
   {
     coords: { lat: 33.1003, lng: -96.8289 },
     content: "<h1>G1</h1>",
+  },
+  //Meter Keys
+  {
+    coords: { lat: 33.1017, lng: -96.828 },
+    content: "<h1>Ball Valve Key</h1> <h2>At back wall by pipe</h2>",
+    iconImage: "resources/pics/key.png",
+  },
+  {
+    coords: { lat: 33.1001, lng: -96.8243 },
+    content: "<h1>NRS Valve Key</h1> <h2>Inside pump room</h2>",
+    iconImage: "resources/pics/key.png",
   },
 ];
 
@@ -166,6 +184,7 @@ function addMarker(props) {
   let marker = new google.maps.Marker({
     position: props.coords,
     map: map,
+    icon: "resources/pics/redx.png",
     //icon:props.iconImage
   });
 
