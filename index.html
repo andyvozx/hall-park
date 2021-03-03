@@ -24,7 +24,41 @@
     <link rel="manifest" href="resources/pics/site.webmanifest" />
   </head>
   <body>
+    <div class="dropdown">
+      <!-- <button onclick="myFunction()" class="dropbtn">Select Building</button> -->
+      <select id="myDropdown">
+        <!-- <div id="myDropdown" class="dropdown-content"> -->
+        <option value="" selected disabled>Select Building</option>
+        <option value="All">All</option>
+        <option value="Keys">Keys</option>
+        <option value="AllJumpers">Jumpers</option>
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="B1">B1</option>
+        <option value="B2">B2</option>
+        <option value="C1">C1</option>
+        <option value="C2">C2</option>
+        <option value="C3">C3</option>
+        <option value="D1">D1</option>
+        <option value="D2">D2</option>
+        <option value="E1">E1</option>
+        <option value="G1">G1</option>
+        <option value="G2">G2</option>
+        <option value="G3">G3</option>
+        <option value="G4">G4</option>
+        <option value="G5">G5</option>
+        <option value="T1">T1</option>
+        <option value="T2">T2</option>
+        <option value="Median1">Median 1</option>
+        <option value="Median2">Median 2</option>
+        <option value="Median3">Median 3</option>
+        <option value="Median4">Median 4</option>
+        <option value="Daycare">Daycare</option>
+        <option value="SculptureGarden">Sculpture Garden</option>
+      </select>
+    </div>
     <div id="map"></div>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA694nlIrekLGa_HFbfbO8zSKZ7EeI6Reo&&v=weekly"></script>
     <script src="app.js"></script>
   </body>

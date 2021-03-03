@@ -15,3 +15,26 @@ body {
 h1 {
   text-align: center;
 }
+
+/* Dropdown */
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  margin-left: 50%;
+  font-family: Arial;
+}
+
+select {
+  margin: 7px;
+  width: 150px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 45px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(resources/pics/favicon-32x32.png) 96% / 15% no-repeat #fff;
+}
