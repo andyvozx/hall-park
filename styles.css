@@ -38,3 +38,23 @@ select {
   appearance: none;
   background: url(resources/pics/favicon-32x32.png) 96% / 15% no-repeat #fff;
 }
+
+@media screen and (max-width: 768px) {
+  select {
+    margin: 7px;
+    width: 120px;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 41px;
+    background: #fff;
+  }
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    margin-left: 52%;
+    margin-top: 2px;
+    font-family: Arial;
+  }
+}
