@@ -42,7 +42,7 @@ select {
 @media screen and (max-width: 768px) {
   select {
     margin: 7px;
-    width: 120px;
+    width: 117px;
     padding: 5px 5px 5px 5px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -56,5 +56,8 @@ select {
     margin-left: 52%;
     margin-top: 2px;
     font-family: Arial;
+  }
+  option {
+    pointer-events: none;
   }
 }

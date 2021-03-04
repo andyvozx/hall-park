@@ -259,6 +259,7 @@ function showMarkers() {
 // Generate Map
 let menu = document.getElementById("myDropdown");
 menu.addEventListener("click", generateMap);
+menu.addEventListener("onChange", generateMap);
 
 function generateMap(event) {
   if (menu.value == "All") {
