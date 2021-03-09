@@ -37,6 +37,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   background: url(resources/pics/favicon-32x32.png) 96% / 15% no-repeat #fff;
+  background-color: #d7feff;
 }
 
 @media screen and (max-width: 768px) {

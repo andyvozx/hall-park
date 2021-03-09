@@ -108,7 +108,7 @@ let markers = [
   {
     coords: { lat: 33.1031, lng: -96.8296 },
     content:
-      "<h1>C2 to G3 jumper (2 of 2)</h1> <p>G3 (3 of 3)</p> <p>Normally Open</p>",
+      "<h1>C2 to G3 jumper (2 of 2)</h1> <p>G3 (1 of 2)</p> <p>Normally Open</p>",
     iconImage: "resources/pics/greenx.png",
   },
   {
@@ -152,11 +152,11 @@ let markers = [
   },
   {
     coords: { lat: 33.1031, lng: -96.831 },
-    content: "<h1>G4</h1> <p>G3 (2 of 3)</p>",
+    content: "<h1>G4</h1> <p>G3 (2 of 2)</p>",
   },
   {
     coords: { lat: 33.1016, lng: -96.831 },
-    content: "<h1>G2</h1> <p>G3 (1 of 3)</p>",
+    content: "<h1>G2</h1>",
   },
   {
     coords: { lat: 33.1003, lng: -96.8289 },
@@ -219,7 +219,7 @@ function addMarker(props) {
       infoWindow.open(map, marker);
     });
 
-    // assuming you also want to hide the infowindow when user mouses-out
+    // Hide the infowindow when user mouses-out
     marker.addListener("mouseout", function () {
       infoWindow.close();
     });
