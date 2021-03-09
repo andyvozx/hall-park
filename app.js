@@ -215,6 +215,14 @@ function addMarker(props) {
     marker.addListener("click", function () {
       infoWindow.open(map, marker);
     });
+    marker.addListener("mouseover", function () {
+      infoWindow.open(map, marker);
+    });
+
+    // assuming you also want to hide the infowindow when user mouses-out
+    marker.addListener("mouseout", function () {
+      infoWindow.close();
+    });
   }
   // Push marker to array (google.maps.marker)
   gooMarker.push(marker);
